@@ -25,7 +25,7 @@ To use the calculator, simply download and install the application on your devic
 
 ## Screenshots
 
-<img src="https://github.com/YooAshu/calculator/assets/95643200/59035e92-97a7-444d-8936-8996274fe29f" alt="app screen shot" width="400"/>
+<img src="https://github.com/YooAshu/calculator/assets/95643200/83fa6004-e7c7-4bc0-9947-9db60d42a52d" alt="app screen shot" width="400"/>
 
 ## Technologies Used
 
@@ -34,7 +34,7 @@ To use the calculator, simply download and install the application on your devic
 
 ## Installation
 
-1. Download the installer from [https://github.com/YooAshu/calculator/raw/master/app-release.apk].
+1. Download the installer from [https://github.com/YooAshu/calculator/releases/download/new/Calculator.apk].
 2. Run the installer and follow the on-screen instructions.
 3. Launch the calculator app after installation.
 

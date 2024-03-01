@@ -3,5 +3,8 @@
     <string name="result">Result</string>
     <string name="AC">AC</string>
     <string name="clear">&#x232B;</string>
+    <string name="divide">&#xF7;</string>
+    <string name="multiply">&#x00D7;</string>
+    <string name="minus">&#x2212;</string>
 
 </resources>

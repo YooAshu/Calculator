@@ -5,49 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="0dp"
-    android:background="#212121"
-    android:orientation="vertical"
     android:layout_weight="1"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#191919"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="ASGHAR HUSSAIN"
+        android:textColor="#FAFAFA"
+        android:textSize="10sp"
+        android:visibility="visible" />
 
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.4"
-        app:flexDirection="column"
-        app:justifyContent="center"
-        app:alignItems="center"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="10dp"
+        android:layout_weight="0.4"
         android:background="@drawable/round_corner"
-        android:backgroundTint="#88a273"
-        >
+        android:backgroundTint="#191919"
+        app:alignItems="center"
+        app:flexDirection="column"
+        app:justifyContent="center">
 
 
-
-
-
-            <TextView
-                android:id="@+id/inputText"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_weight="0.5"
-                android:fontFamily="@font/orbitron_medium"
-                android:gravity="bottom|end"
-                android:text=""
-                android:textColor="#020000"
-                android:textStyle="bold"
-                tools:visibility="visible"
-                android:paddingHorizontal="10dp"
-                android:maxLines="1"
-                app:autoSizeTextType="uniform"
-                app:autoSizeMaxTextSize="35sp"
-                app:autoSizeMinTextSize="15sp"
-                app:autoSizeStepGranularity="1sp"/>
-
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom|end"
+            android:maxLines="1"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColor="#9B5DF2"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            tools:visibility="visible" />
 
 
         <TextView
@@ -56,34 +63,21 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="0.5"
-            android:fontFamily="@font/orbitron_medium"
-            android:gravity="end|center_vertical"
-            android:text=""
-            android:textColor="#9E020000"
-            android:textStyle="bold"
-            tools:visibility="visible"
-            android:paddingHorizontal="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="end"
             android:maxLines="1"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="50sp"
+            app:autoSizeMinTextSize="25sp"
+            app:autoSizeStepGranularity="1sp"
             app:autoSizeTextType="uniform"
-            app:autoSizeMaxTextSize="35sp"
-            app:autoSizeMinTextSize="15sp"
-            app:autoSizeStepGranularity="1sp"/>
-
-
-
-
-
+            tools:visibility="visible" />
 
 
     </com.google.android.flexbox.FlexboxLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ASGHAR HUSSAIN"
-        android:textSize="10sp"
-        android:gravity="center"/>
 
     <LinearLayout
         android:id="@+id/buttonsContainer"
@@ -104,29 +98,37 @@
             android:layout_height="wrap_content"
             app:alignItems="center"
             app:justifyContent="space_around">
+            
 
             <Button
                 style="@style/OpButton"
-                android:onClick="allClearButton"
                 android:layout_width="170dp"
                 android:layout_height="70dp"
-                android:textColor="@color/white"
                 android:background="@drawable/round_corner_gradient"
-                android:text="@string/AC" />
+                android:onClick="allClearButton"
+                android:text="@string/AC"
+                android:textColor="@color/white" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
+
                 style="@style/OpButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:onClick="clearToLeft"
-                android:text="@string/clear" />
+                android:text="@string/clear"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
 
-            <Button
+                />
+
+
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/OpButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="/" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/divide"
+                android:id="@+id/divide"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
 
             <!--                <Button-->
             <!--                    style="@style/Button"-->
@@ -141,33 +143,38 @@
             app:alignItems="center"
             app:justifyContent="space_around">
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                android:text="7"/>
 
-                android:text="7" />
-
-            <Button
+            <soup.neumorphism.NeumorphButton
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="8" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="9" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/OpButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="*" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/multiply"
+                android:id="@+id/multiply"
+
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
 
 
         </com.google.android.flexbox.FlexboxLayout>
@@ -181,33 +188,40 @@
             app:alignItems="center"
             app:justifyContent="space_around">
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
 
                 android:text="4" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="5" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="6" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/OpButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="-" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="30sp"
+                android:text="@string/minus"
+                android:id="@+id/minus"
+
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
 
 
         </com.google.android.flexbox.FlexboxLayout>
@@ -220,33 +234,40 @@
             app:alignItems="center"
             app:justifyContent="space_around">
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
 
                 android:text="1" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="2" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="3" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/OpButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="+" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="+"
+                android:textSize="30sp"
+
+                app:neumorph_shadowColorLight="@color/white"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance" />
 
 
         </com.google.android.flexbox.FlexboxLayout>
@@ -259,45 +280,37 @@
             app:alignItems="center"
             app:justifyContent="space_around">
 
-            <Button
+            <soup.neumorphism.NeumorphButton
 
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
 
                 android:text="0" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
                 style="@style/NumButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                 android:text="." />
 
             <Button
 
                 style="@style/OpButton"
                 android:layout_width="170dp"
-                android:onClick="equalButton"
                 android:layout_height="70dp"
+                android:onClick="equalButton"
+                android:text="="
                 android:textColor="@color/white"
-                android:background="@drawable/round_corner_gradient"
-
-                android:text="=" />
-
-            <!--            <Button-->
-
-            <!--                style="@style/Button"-->
-            <!--                android:layout_width="70dp"-->
-            <!--                android:layout_height="70dp"-->
-            <!--                android:text="/" />-->
+                android:textSize="45sp"
+                android:background="@drawable/round_corner_gradient" />
 
 
         </com.google.android.flexbox.FlexboxLayout>
 
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>

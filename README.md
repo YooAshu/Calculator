@@ -25,7 +25,7 @@ To use the calculator, simply download and install the application on your devic
 
 ## Screenshots
 
-<img src="https://github.com/YooAshu/calculator/assets/95643200/83fa6004-e7c7-4bc0-9947-9db60d42a52d" alt="app screen shot" width="400"/>
+<img src="https://github.com/YooAshu/calculator/assets/95643200/3d0ae94c-5716-4e46-854e-55d63435c3c1" alt="app screen shot" width="400"/>
 
 ## Technologies Used
 
